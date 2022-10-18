@@ -1,0 +1,38 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.uefa</groupId>
+    <artifactId>java-10</artifactId>
+    <version>0.37</version>
+    <repositories>
+        <repository>
+            <id>additional</id>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>6.0.0-M6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.0.0-M6</version>
+        </dependency>        
+    </dependencies>
+    <build>
+        <sourceDirectory>code</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>data</directory>
+            </resource>
+        </resources>
+    </build>
+    
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+    </properties>
+</project>
